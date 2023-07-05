@@ -22,3 +22,7 @@ jobs:
 
     - name: Test
       run: make test
+
+    - uses: mshick/add-pr-comment@v2
+      with:
+        message-path: e2e-test-result.json
